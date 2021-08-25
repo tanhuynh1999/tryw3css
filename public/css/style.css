@@ -1,0 +1,84 @@
+/*Reset Css*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Verdana,sans-serif;
+}
+
+#header {
+    background-color: #000;
+    height: 46px;
+}
+
+/*Menu*/
+#menu{
+
+}
+
+#menu ul{
+    list-style-type: none;
+}
+
+#menu > li{
+    display: inline-block;
+}
+
+#menu li{
+    position: relative;
+}
+
+#menu li a{
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 20px;
+    display: block;
+}
+
+#menu > li:hover > a,
+#menu .submenu li:hover a{
+    background-color: #ccc;
+    color: black;
+}
+
+
+
+#menu .submenu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+#menu .submenu a{
+    color: black;
+}
+
+#menu li:hover .submenu{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+#slider {
+    
+    height: 300px;
+}
+
+#content {
+
+}
+
+#footer {
+
+}
