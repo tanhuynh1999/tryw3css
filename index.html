@@ -80,20 +80,93 @@
                     <p class="member-text">Name</p>
                     <img class="member-img" src="./public/img/member/bandmember.jpg" alt="" srcset="">
                 </div>
-                
+                <div class="clear-fix"></div>
             </div>
         </div>
 
         <!--TOUR DATES-->
-        <div class="section">
-            <h2 class="section-title">
-                TOUR DATES
-            </h2>
-            <p class="section-des">
-                Remember to book your tickets!
-            </p>
-        </div>
+        <div class="tour-section">
+            <div class="section">
+                <h2 class="section-title text-white">
+                    TOUR DATES
+                </h2>
+                <p class="section-des text-white">
+                    Remember to book your tickets!
+                </p>
+                <ul class="calendar-about-list">
+                    <li>
+                        September
+                        <span class="sold-out">Sold out</span>
+                    </li>
+                    <li>
+                        October 
+                        <span class="sold-out">Sold out</span>
+                    </li>
+                    <li>
+                        November
+                        <span class="number">3</span>
+                    </li>
+                </ul>
+                <div class="tour-about-list">
+                    
+                    <div class="tour-item">
+                        <img class="tour-img" src="./public/img/tour/newyork.jpg" alt="" srcset="">
+                        <div class="tour-body">
+                            <h4 class="tour-text">
+                                New York
+                            </h4>
+                            <p class="tour-date">
+                                Fri 27 Nov 2016
+                            </p>
+                            <p class="tour-descibe">
+                                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </p>
+                            <button class="tour-buy-btn js-click-modal">
+                                Buy Tickets
+                            </button>
+                        </div>
+                    </div>
 
+                    <div class="tour-item">
+                        <img class="tour-img" src="./public/img/tour/paris.jpg" alt="" srcset="">
+                        <div class="tour-body">
+                            <h4 class="tour-text">
+                                Paris
+                            </h4>
+                            <p class="tour-date">
+                                Sat 28 Nov 2016
+                            </p>
+                            <p class="tour-descibe">
+                                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </p>
+                            <button class="tour-buy-btn js-click-modal">
+                                Buy Tickets
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tour-item">
+                        <img class="tour-img" src="./public/img/tour/sanfran.jpg" alt="" srcset="">
+                        <div class="tour-body">
+                            <h4 class="tour-text">
+                                New York
+                            </h4>
+                            <p class="tour-date">
+                                Sun 29 Nov 2016
+                            </p>
+                            <p class="tour-descibe">
+                                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </p>
+                            <button class="tour-buy-btn js-click-modal">
+                                Buy Tickets
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="clear-fix"></div>
         <!--CONTACT-->
         <div class="section">
             <h2 class="section-title">
@@ -114,8 +187,35 @@
 
     <!--Footer-->
     <div id="footer">
-
+        
     </div>
     <!--Footer-->
+
+
+    <!--Modal-->
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <span class="icon-logo">
+
+                </span>
+                Tickets
+            </div>
+            <div class="model-content">
+                <label>Tickets, $15 per person</label>
+                <input type="text" name="">
+                <label>Send to</label>
+                <input type="text" name="">
+                <button class="pay-btn">
+                    PAY <span></span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./public/js/modal.js"></script>
 </body>
 </html>

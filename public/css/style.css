@@ -14,6 +14,19 @@ h1,h2,h3,h4,h5,h5{
     font-weight: 300;
 }
 
+.clear-fix{
+    clear: both;
+}
+
+/*Common*/
+.bblack{
+    background-color: black;
+}
+
+.text-white{
+    color: white;
+}
+
 #header {
     background-color: #000;
     height: 46px;
@@ -119,7 +132,7 @@ h1,h2,h3,h4,h5,h5{
 }
 
 #content .section{
-    padding: 124px 64px;
+    padding: 64px 64px;
     width: 920px;
     margin-left: auto;
     margin-right: auto;
@@ -163,7 +176,130 @@ h1,h2,h3,h4,h5,h5{
     width: 60%;
 }
 
+/*Tour dates*/
+#content .tour-section{
+    background-color: #000;
+    margin-top: 200px;
+    height: 40%;
+}
+
+#content .calendar-about-list{
+    background-color: white;
+    margin-top:20px;
+}
+
+#content .calendar-about-list li{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+    color: #757575;
+    font-weight: 100;
+    list-style-type: none;
+}
+
+.calendar-about-list .sold-out{
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 15px;
+}
+
+.calendar-about-list .number{
+    float: right;
+    background-color: black;
+    color: white;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/*TOUR DATES*/
+#content .tour-about-list{
+    margin: 32px -2px;
+}
+
+.tour-about-list .tour-item{
+    float: left;
+    width: 33.33333333333333%;
+    padding: 0 8px;
+}
+
+.tour-item .tour-body{
+    background-color: white;
+    padding: 2px 16px;
+    margin-top: -3px;
+}
+
+.tour-item .tour-img{
+    width: 100%;
+}
+
+.tour-item .tour-img:hover{
+    opacity: 0.6;
+}
+
+.tour-body .tour-text{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.tour-body .tour-date{
+    margin-top: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    
+}
+
+.tour-body .tour-descibe{
+    margin-top: 15px;
+}
+
+.tour-body .tour-buy-btn{
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    padding: 9px 16px;
+    margin-bottom: 15px;
+    border: none;
+    cursor: pointer;
+}
 
 #footer {
 
+}
+
+/*Modal*/
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal .modal-container{
+    background-color: white;
+    width: 900px;
+    height: 300px;
+    max-width: calc(100% -32px);
+    animation: telexModal ease 0.3s;
+    max-width: calc(100% - 32px);
+}
+
+.modal.open{
+    display: flex;
+}
+
+@keyframes telexModal{
+    from{
+        transform: translateY(-202px);
+    }
+    to{
+        transform: translateY(0px);
+    }
 }
